@@ -62,3 +62,68 @@ En el mejor lugar para conseguir y crear adonce
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pocket Tweaks | Oficial</title>
+    <style>
+        /* Estilo Base al estilo Vanilla Tweaks */
+        body { background-color: #121212; color: #e0e0e0; font-family: 'Arial', sans-serif; text-align: center; }
+        
+        .panel { 
+            background: #1e1e1e; border: 2px solid #333; border-radius: 15px; 
+            padding: 30px; margin: 50px auto; max-width: 600px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        /* BOTONES BLINDADOS: No se buguean */
+        .boton-tweaks {
+            display: inline-block; padding: 15px 30px; margin: 10px;
+            font-size: 18px; font-weight: bold; text-decoration: none;
+            color: white; border-radius: 8px; cursor: pointer;
+            transition: all 0.2s ease-in-out; border: none;
+            box-shadow: 0 4px #222;
+        }
+
+        /* Color Verde estilo Vanilla */
+        .verde { background-color: #388e3c; }
+        .verde:hover { background-color: #45a049; transform: translateY(-2px); }
+        .verde:active { transform: translateY(2px); box-shadow: 0 0 #222; }
+
+        /* Color Dorado estilo Ángel Caído */
+        .dorado { background-color: #d4af37; color: black; }
+        .dorado:hover { background-color: #ffcc33; transform: translateY(-2px); }
+        .dorado:active { transform: translateY(2px); box-shadow: 0 0 #222; }
+
+        .log { color: #00ff00; font-family: monospace; font-size: 12px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="panel">
+        <h1>POCKET TWEAKS 💎</h1>
+        <p>Selecciona tu mejora de Bedrock mejorada:</p>
+
+        <button class="boton-tweaks verde" onclick="alert('¡Descargando Pocket Tweaks mejorado!')">
+            DESCARGAR PACK
+        </button>
+
+        <button class="boton-tweaks dorado" onclick="activarAddon()">
+            ACTIVAR DATA PACKS
+        </button>
+
+        <div id="status" class="log">Esperando órdenes del Ángel Caído...</div>
+    </div>
+
+    <script>
+        // Función para evitar que el botón se quede "muerto"
+        function activarAddon() {
+            const status = document.getElementById('status');
+            status.innerText = "> Sincronizando con R4R y Francisco... ¡LISTO!";
+            console.log("Sistema Pocket Tweaks activado sin bugs.");
+        }
+    </script>
+
+</body>
+</html>
